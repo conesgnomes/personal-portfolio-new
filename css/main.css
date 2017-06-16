@@ -599,13 +599,11 @@ nav p a:hover:after {
   left: 0;
 }
 nav ul {
-  display: none;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
 }
 @media only screen and (min-width: 900px) {
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
   nav ul li {
     margin-left: 60px;
   }

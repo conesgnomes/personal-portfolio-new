@@ -56,10 +56,12 @@ nav {
   }
 
   ul {
-    display: none;
+    // display: none;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
     @media #{$breakpoint-large} {
-      display: flex;
-      list-style: none;
       li {
         margin-left: 60px;
         &:nth-child(3) {
