@@ -433,6 +433,16 @@ header button {
   font-size: 2.5em;
 }
 
+nav a {
+  color: black;
+  font-family: 'futura-md';
+  font-size: 1.2em;
+}
+nav p {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -496,6 +506,90 @@ header button:hover::after {
 }
 header button:focus {
   outline: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+nav a {
+  text-decoration: none;
+}
+nav p {
+  margin-left: 60px;
+}
+nav p a {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+nav p a::before {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  width: 0;
+  top: 0;
+  height: 3px;
+  background: black;
+}
+nav p a:hover:before {
+  width: 100%;
+  right: 0;
+}
+nav p a::after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  width: 0;
+  bottom: 0;
+  height: 3px;
+  background: black;
+  right: 0;
+  left: auto;
+}
+nav p a:hover:after {
+  width: 100%;
+  left: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 60px;
+}
+nav ul li:nth-child(3) {
+  margin-right: 60px;
+}
+nav ul li a {
+  border: none;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+nav ul li a::after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  width: 0;
+  bottom: 0;
+  height: 3px;
+  background: black;
+  right: 0;
+  left: auto;
+}
+nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
