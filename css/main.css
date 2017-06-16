@@ -426,6 +426,7 @@ header p {
   color: white;
   font-family: 'futura-md';
   font-size: 1.2em;
+  letter-spacing: .2em;
 }
 header button {
   color: white;
@@ -440,7 +441,7 @@ nav a {
 }
 nav p {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 * {
@@ -512,7 +513,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 70px;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -522,6 +523,9 @@ nav a {
 }
 nav p {
   margin-left: 60px;
+  border: solid 3px black;
+  border-radius: 100%;
+  padding: 10px;
 }
 nav p a {
   cursor: pointer;
