@@ -3,6 +3,11 @@
   src: url("../fonts/century.ttf");
 }
 
+@font-face {
+  font-family: "futura-md";
+  src: url("../fonts/futura-medium.ttf");
+}
+
 * {
   font-family: "century";
 }
@@ -10,7 +15,8 @@
 header {
   p {
     color: white;
-    font-family: 'system-ui';
+    font-family: 'futura-md';
+    font-size: 1.2em;
   }
   button {
     color: white;

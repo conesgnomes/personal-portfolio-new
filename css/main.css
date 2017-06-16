@@ -414,13 +414,18 @@ template {
   font-family: "century";
   src: url("../fonts/century.ttf");
 }
+@font-face {
+  font-family: "futura-md";
+  src: url("../fonts/futura-medium.ttf");
+}
 * {
   font-family: "century";
 }
 
 header p {
   color: white;
-  font-family: 'system-ui';
+  font-family: 'futura-md';
+  font-size: 1.2em;
 }
 header button {
   color: white;
@@ -437,8 +442,15 @@ header button {
 header {
   background-image: url("../img/umbrella.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
+}
+header .name {
+  padding: 30px 0 0 30px;
+}
+header .name p {
+  border-bottom: 2px solid white;
 }
 header button {
   cursor: pointer;
