@@ -1,0 +1,6 @@
+header {
+  @include grid-container;
+  .header-container {
+    @include grid-column(12, $no-gutter);
+  }
+}

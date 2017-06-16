@@ -10,14 +10,20 @@
 
 * {
   font-family: "century";
+  img {
+    width: 50px;
+  }
 }
 
 header {
   p {
     color: white;
     font-family: 'futura-md';
-    font-size: 1.2em;
     letter-spacing: .2em;
+    font-size: .8em;
+    @media #{$breakpoint-medium} {
+      font-size: 1.2em;
+    }
   }
   button {
     color: white;
@@ -30,7 +36,9 @@ nav {
   a {
     color: black;
     font-family: 'futura-md';
-    font-size: 1.2em;
+    @media #{$breakpoint-medium} {
+      font-size: 1.2em;      
+    }
   }
   p {
     text-transform: uppercase;
