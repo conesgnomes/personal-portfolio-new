@@ -604,7 +604,7 @@ header .header-container {
 }
 @media only screen and (min-width: 1000px) {
   .bio .bio-text {
-    width: calc(41.66667%);
+    width: calc(33.33333%);
     float: left;
     margin-left: 0;
     left: calc(25% - 25px + 20px);
@@ -850,8 +850,9 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
+  cursor: pointer;
 }
-nav ul li:nth-child(3) {
+nav ul li:nth-child(2) {
   margin-right: 60px;
 }
 nav ul li a {
@@ -963,7 +964,7 @@ nav #nav-icon.open span:nth-child(4) {
 }
 @media only screen and (min-width: 1000px) {
   .bio .bio-text p:first-child {
-    margin-top: 160px;
+    margin-top: 170px;
   }
 }
 .bio .bio-text .social {
@@ -979,6 +980,9 @@ nav #nav-icon.open span:nth-child(4) {
   text-align: center;
 }
 
+.projects {
+  padding-top: -300px;
+}
 .projects .all-projects .photo-group {
   margin-top: 30px;
 }
