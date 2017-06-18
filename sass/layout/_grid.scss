@@ -4,3 +4,17 @@ header {
     @include grid-column(12, $no-gutter);
   }
 }
+
+.bio {
+  @include grid-container;
+  img {
+    @include grid-column(12, $no-gutter);
+  }
+  .bio-text {
+    @include grid-column(10, $no-gutter);
+    @include grid-shift(1);
+  }
+  .chevron {
+    @include grid-column(12, $no-gutter);
+  }
+}

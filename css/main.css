@@ -421,9 +421,6 @@ template {
 * {
   font-family: "century";
 }
-* img {
-  width: 50px;
-}
 
 header p {
   color: white;
@@ -457,6 +454,15 @@ nav p {
   font-size: 1.3em;
 }
 
+.bio .bio-text {
+  font-size: 1.4em;
+  text-align: center;
+}
+.bio i {
+  text-align: center;
+  font-size: 1.7em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -469,6 +475,29 @@ header::after {
   display: block;
 }
 header .header-container {
+  width: calc(100%);
+  float: left;
+  margin-left: 0;
+}
+
+.bio::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.bio img {
+  width: calc(100%);
+  float: left;
+  margin-left: 0;
+}
+.bio .bio-text {
+  width: calc(83.33333%);
+  float: left;
+  margin-left: 0;
+  left: calc(8.33333% - 21.66667px + 20px);
+  position: relative;
+}
+.bio .chevron {
   width: calc(100%);
   float: left;
   margin-left: 0;
@@ -730,6 +759,21 @@ nav #nav-icon.open span:nth-child(4) {
   top: 26px;
   width: 0%;
   left: 50%;
+}
+
+.bio .bio-text p {
+  margin-top: 30px;
+}
+.bio .bio-text .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.bio .bio-text .social i:nth-child(2) {
+  margin: 0 30px;
+}
+.bio .chevron {
+  margin: 30px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
