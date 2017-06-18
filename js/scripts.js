@@ -25,7 +25,7 @@ $(function() {
 
   $(".bio-link").click(function() {
     $("html body").animate({
-      scrollTop: $(".bio").offset().top-135}, "slow");
+      scrollTop: $(".bio").offset().top-134}, "slow");
     });
 
 
