@@ -458,9 +458,19 @@ nav p {
   font-size: 1.4em;
   text-align: center;
 }
+@media only screen and (min-width: 760px) {
+  .bio .bio-text {
+    text-align: left;
+  }
+}
 .bio i {
   text-align: center;
   font-size: 1.7em;
+}
+@media only screen and (min-width: 760px) {
+  .bio i {
+    text-align: left;
+  }
 }
 
 * {
@@ -499,6 +509,15 @@ header .header-container {
     position: relative;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .bio img {
+    width: calc(25%);
+    float: left;
+    margin-left: 0;
+    left: calc(16.66667% - 23.33333px + 20px);
+    position: relative;
+  }
+}
 .bio .bio-text {
   width: calc(83.33333%);
   float: left;
@@ -508,19 +527,21 @@ header .header-container {
 }
 @media only screen and (min-width: 760px) {
   .bio .bio-text {
-    width: calc(58.33333%);
+    width: calc(41.66667%);
     float: left;
     margin-left: 0;
-    left: calc(8.33333% - 21.66667px + 20px);
+    left: calc(16.66667% - 23.33333px + 20px);
     position: relative;
   }
 }
-.bio .social {
-  width: calc(83.33333%);
-  float: left;
-  margin-left: 0;
-  left: calc(8.33333% - 21.66667px + 20px);
-  position: relative;
+@media only screen and (min-width: 1000px) {
+  .bio .bio-text {
+    width: calc(41.66667%);
+    float: left;
+    margin-left: 0;
+    left: calc(25% - 25px + 20px);
+    position: relative;
+  }
 }
 .bio .chevron {
   width: calc(100%);
@@ -602,6 +623,7 @@ nav {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 100;
 }
 nav p {
   margin: 15px 0 15px 20px;
@@ -786,19 +808,47 @@ nav #nav-icon.open span:nth-child(4) {
   left: 50%;
 }
 
+.bio {
+  height: 100vh;
+}
+@media only screen and (min-width: 760px) {
+  .bio {
+    margin-top: 50px;
+  }
+}
 .bio .bio-text p {
   margin-top: 30px;
+}
+@media only screen and (min-width: 760px) {
+  .bio .bio-text p:first-child {
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .bio .bio-text p:first-child {
+    margin-top: 160px;
+  }
 }
 .bio .bio-text .social {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .bio .bio-text .social i:nth-child(2) {
   margin: 0 30px;
 }
 .bio .chevron {
-  margin: 30px 0;
+  margin: 50px 0;
+  text-align: center;
+}
+@media only screen and (min-width: 760px) {
+  .bio .chevron {
+    margin: 80px 0;
+  }
+}
+
+.projects img {
+  height: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

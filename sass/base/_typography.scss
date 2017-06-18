@@ -48,9 +48,15 @@ nav {
   .bio-text {
     font-size: 1.4em;
     text-align: center;
+    @media #{$breakpoint-medium} {
+      text-align: left;
+    }
   }
   i {
     text-align: center;
     font-size: 1.7em;
+    @media #{$breakpoint-medium} {
+      text-align: left;
+    }
   }
 }

@@ -1,21 +1,37 @@
 .bio {
+  height: 100vh;
+  @media #{$breakpoint-medium} {
+    margin-top: 50px;
+  }
   img {
     // margin: 10px 0 0 20px;
   }
   .bio-text {
     p {
       margin-top: 30px;
+      &:first-child {
+        @media #{$breakpoint-medium} {
+          margin-top: 100px;
+        }
+        @media #{$breakpoint-large} {
+          margin-top: 160px;
+        }
+      }
     }
     .social {
       display: flex;
       justify-content: center;
-      margin-top: 30px;
+      margin-top: 50px;
       i:nth-child(2) {
         margin: 0 30px;
       }
     }
   }
   .chevron {
-    margin: 30px 0;
+    margin: 50px 0;
+    text-align: center;
+    @media #{$breakpoint-medium} {
+      margin: 80px 0;
+    }
   }
 }
