@@ -3,9 +3,6 @@
   @media #{$breakpoint-medium} {
     margin-top: 50px;
   }
-  img {
-    // margin: 10px 0 0 20px;
-  }
   .bio-text {
     p {
       margin-top: 30px;
@@ -28,10 +25,7 @@
     }
   }
   .chevron {
-    margin: 50px 0;
+    margin: 80px 0 150px 0;
     text-align: center;
-    @media #{$breakpoint-medium} {
-      margin: 80px 0;
-    }
   }
 }

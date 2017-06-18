@@ -60,3 +60,17 @@ nav {
     }
   }
 }
+
+.projects {
+  p:first-child {
+    text-align: center;
+    font-size: 1.4em;
+  }
+  i {
+    text-align: center;
+    font-size: 1.7em;
+    @media #{$breakpoint-medium} {
+      text-align: left;
+    }
+  }
+}

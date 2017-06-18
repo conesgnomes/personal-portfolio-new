@@ -473,6 +473,20 @@ nav p {
   }
 }
 
+.projects p:first-child {
+  text-align: center;
+  font-size: 1.4em;
+}
+.projects i {
+  text-align: center;
+  font-size: 1.7em;
+}
+@media only screen and (min-width: 760px) {
+  .projects i {
+    text-align: left;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -543,7 +557,31 @@ header .header-container {
     position: relative;
   }
 }
-.bio .chevron {
+
+.chevron {
+  width: calc(100%);
+  float: left;
+  margin-left: 0;
+}
+
+.projects::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.projects p:first-child {
+  width: calc(83.33333%);
+  float: left;
+  margin-left: 0;
+  left: calc(8.33333% - 21.66667px + 20px);
+  position: relative;
+}
+.projects .photo-group {
+  width: calc(100%);
+  float: left;
+  margin-left: 0;
+}
+.projects .photo-group img {
   width: calc(100%);
   float: left;
   margin-left: 0;
@@ -838,17 +876,12 @@ nav #nav-icon.open span:nth-child(4) {
   margin: 0 30px;
 }
 .bio .chevron {
-  margin: 50px 0;
+  margin: 80px 0 150px 0;
   text-align: center;
 }
-@media only screen and (min-width: 760px) {
-  .bio .chevron {
-    margin: 80px 0;
-  }
-}
 
-.projects img {
-  height: 50px;
+.projects .photo-group {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

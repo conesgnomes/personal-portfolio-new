@@ -30,8 +30,22 @@ header {
       @include grid-shift(3);
     }
   }
+}
 
-  .chevron {
+.chevron {
+  @include grid-column(12, $no-gutter);
+}
+
+.projects {
+  @include grid-container;
+  p:first-child {
+    @include grid-column(10, $no-gutter);
+    @include grid-shift(1);
+  }
+  .photo-group {
     @include grid-column(12, $no-gutter);
+    img {
+      @include grid-column(12, $no-gutter);
+    }
   }
 }
