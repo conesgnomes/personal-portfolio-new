@@ -7,13 +7,13 @@ $(function() {
       scrollTop: $("nav").offset().top}, "slow");
     });
 
-  var stickyHeaderTop = $('.nav-bar').offset().top;
+  var stickyHeaderTop = $('.nav-bar').offset().top-100;
 
   // nav bar background color on scroll
 
   $(window).scroll(function(){
     if( $(window).scrollTop() > stickyHeaderTop ) {
-      $('.nav-bar').css({background: 'rgba(255, 255, 255, 0.8)'});
+      $('.nav-bar').css({background: 'rgba(244, 244, 244, 0.8)'});
     } else {
       $('.nav-bar').css({background: 'none'});
     }

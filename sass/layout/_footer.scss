@@ -1,25 +1,17 @@
-header{
-  background-image: url("../img/umbrella.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  p {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 30px 0 0 30px;
-  }
+  background: white;
+  padding: 70px 0;
+  margin-top: 100px;
   .button-container {
     button {
-      padding: .5em 1em;
-      border: solid 3px white;
-      background: none;
       cursor: pointer;
+      background: none;
+      padding: .5em 1em;
+      border: solid 3px black;
       @media #{$breakpoint-large} {
         border: none;
         position: relative;
@@ -49,15 +41,15 @@ header{
           height: 100%;
         }
         &:hover::before {
-          border-top-color: white; // Make borders visible
-          border-right-color: white;
+          border-top-color: black; // Make borders visible
+          border-right-color: black;
           transition:
           width 0.15s ease-out, // Width expands first
           height 0.15s ease-out 0.15s; // And then height
         }
         &:hover::after {
-          border-bottom-color: white; // Make borders visible
-          border-left-color: white;
+          border-bottom-color: black; // Make borders visible
+          border-left-color: black;
           transition:
           border-color 0.15s ease-out 0.3s, // Wait for ::before to finish before showing border
           width 0.15s ease-out 0.3s, // And then exanding width
@@ -67,6 +59,12 @@ header{
           outline: none;
         }
       }
+    }
+  }
+  .social {
+    margin-top: 20px;
+    i {
+      margin: 0 15px;
     }
   }
 }

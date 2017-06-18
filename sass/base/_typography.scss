@@ -57,12 +57,7 @@ nav {
     font-size: 1.7em;
     color: black;
     @media #{$breakpoint-large} {
-      color: $grey;
-      transition: 0.3s;
-      &:hover {
-        color: black;
-        transition: 0.3s;
-      }
+      @include grey-hover;
     }
   }
 }
@@ -97,6 +92,23 @@ nav {
       font-size: 1.1em;
       text-decoration: none;
       text-align: left;
+    }
+  }
+}
+
+footer {
+  button {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  .social {
+    i {
+      font-size: 2em;
+      color: black;
+      @media #{$breakpoint-large} {
+        @include grey-hover;
+      }
     }
   }
 }
