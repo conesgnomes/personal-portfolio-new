@@ -445,8 +445,9 @@ header button {
 nav a {
   color: black;
   font-family: 'futura-md';
+  font-size: 1.4em;
 }
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 1000px) {
   nav a {
     font-size: 1.2em;
   }
@@ -495,7 +496,7 @@ header .button-container button {
   border: solid 3px white;
   background: none;
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   header .button-container button {
     cursor: pointer;
     border: none;
@@ -544,17 +545,12 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 70px;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
 }
-nav marg
-a {
-  text-decoration: none;
-}
 nav p {
-  margin-left: 20px;
+  margin: 15px 0 15px 20px;
   border: solid 3px black;
   border-radius: 100%;
   padding: 10px;
@@ -565,6 +561,7 @@ nav p {
   }
 }
 nav p a {
+  text-decoration: none;
   cursor: pointer;
   border: none;
   background: transparent;
@@ -601,40 +598,70 @@ nav p a:hover:after {
   left: 0;
 }
 nav ul {
-  display: flex;
   list-style: none;
-  justify-content: space-around;
   width: 100%;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  -webkit-transition: height, 0.3s linear;
+  -moz-transition: height, 0.3s linear;
+  -ms-transition: height, 0.3s linear;
+  -o-transition: height, 0.3s linear;
+  transition: height, 0.3s linear;
 }
-@media only screen and (min-width: 900px) {
-  nav ul li {
-    margin-left: 60px;
-  }
-  nav ul li:nth-child(3) {
-    margin-right: 60px;
-  }
-  nav ul li a {
+nav ul.open {
+  border-top: solid grey 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  -webkit-transition: height, 0.3s linear;
+  -moz-transition: height, 0.3s linear;
+  -ms-transition: height, 0.3s linear;
+  -o-transition: height, 0.3s linear;
+  transition: height, 0.3s linear;
+}
+@media only screen and (min-width: 1000px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
     border: none;
-    background: transparent;
-    position: relative;
-    overflow: hidden;
-    transition: 0.3s;
+    overflow: visible;
   }
-  nav ul li a::after {
-    position: absolute;
-    transition: .3s;
-    content: '';
-    width: 0;
-    bottom: 0;
-    height: 3px;
-    background: black;
-    right: 0;
-    left: auto;
-  }
-  nav ul li a:hover:after {
-    width: 100%;
-    left: 0;
-  }
+}
+nav ul li {
+  margin-left: 60px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li:nth-child(3) {
+  margin-right: 60px;
+}
+nav ul li a {
+  border: none;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+nav ul li a::after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  width: 0;
+  bottom: 0;
+  height: 3px;
+  background: black;
+  right: 0;
+  left: auto;
+}
+nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 nav #nav-icon {
   width: 40px;
@@ -651,7 +678,7 @@ nav #nav-icon {
   transition: .5s ease-in-out;
   cursor: pointer;
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   nav #nav-icon {
     display: none;
   }
@@ -674,16 +701,16 @@ nav #nav-icon span {
   transition: .25s ease-in-out;
 }
 nav #nav-icon span:nth-child(1) {
-  top: 0px;
+  top: 8px;
 }
 nav #nav-icon span:nth-child(2), nav #nav-icon span:nth-child(3) {
-  top: 13px;
+  top: 20px;
 }
 nav #nav-icon span:nth-child(4) {
-  top: 26px;
+  top: 32px;
 }
 nav #nav-icon.open span:nth-child(1) {
-  top: 18px;
+  top: 26px;
   width: 0%;
   left: 50%;
 }
@@ -700,7 +727,7 @@ nav #nav-icon.open span:nth-child(3) {
   transform: rotate(-45deg);
 }
 nav #nav-icon.open span:nth-child(4) {
-  top: 18px;
+  top: 26px;
   width: 0%;
   left: 50%;
 }

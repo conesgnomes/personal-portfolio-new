@@ -13,7 +13,7 @@ $(function() {
 
   $(window).scroll(function(){
     if( $(window).scrollTop() > stickyHeaderTop ) {
-      $('.nav-bar').css({background: 'rgba(255, 255, 255, 0.6)'});
+      $('.nav-bar').css({background: 'rgba(255, 255, 255, 0.8)'});
     } else {
       $('.nav-bar').css({background: 'none'});
     }
@@ -23,5 +23,11 @@ $(function() {
 
   $('#nav-icon').click(function(){
 		$(this).toggleClass('open');
+    $('ul').toggleClass('open');
 	});
+
+  // mobile menu toggle
+
+
+
 });
