@@ -42,10 +42,38 @@ header {
     @include grid-column(10, $no-gutter);
     @include grid-shift(1);
   }
-  .photo-group {
+  .all-projects {
     @include grid-column(12, $no-gutter);
-    img {
-      @include grid-column(12, $no-gutter);
+    .photo-group {
+      img {
+        @include grid-column(12, $no-gutter);
+      }
+      @media #{$breakpoint-medium} {
+        &:first-of-type {
+          @include grid-column(4, $no-gutter);
+          @include grid-shift(1);
+        }
+        &:nth-of-type(2) {
+          @include grid-column(4, $no-gutter);
+          @include grid-shift(3);
+        }
+        &:nth-of-type(3) {
+          @include grid-column(5, $no-gutter);
+          @include grid-shift(1);
+        }
+        &:nth-of-type(4) {
+          @include grid-column(4, $no-gutter);
+          @include grid-shift(2);
+        }
+        &:nth-of-type(5) {
+          @include grid-column(4, $no-gutter);
+          @include grid-shift(1);
+        }
+        &:nth-of-type(6) {
+          @include grid-column(5, $no-gutter);
+          @include grid-shift(2);
+        }
+      }
     }
   }
 }

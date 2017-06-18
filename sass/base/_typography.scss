@@ -64,13 +64,31 @@ nav {
 .projects {
   p:first-child {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.1em;
+    @media #{$breakpoint-medium} {
+      font-size: 1.4em;
+    }
   }
   i {
     text-align: center;
     font-size: 1.7em;
     @media #{$breakpoint-medium} {
       text-align: left;
+    }
+  }
+  .photo-group {
+    p:nth-child(2) {
+      color: black;
+      font-family: 'futura-md';
+      font-size: .8em;
+      letter-spacing: .1em;
+    }
+    p:nth-child(4) {
+      color: black;
+      font-size: 1.1em;
+      text-decoration: none;
+      text-align: left;
+      // letter-spacing: .1em;
     }
   }
 }

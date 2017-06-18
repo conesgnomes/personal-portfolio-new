@@ -21,7 +21,7 @@ nav {
       border: none;
       background: transparent;
       position: relative;
-      overflow:hidden;
+      overflow: hidden;
       transition: 0.3s;
       &::before {
         position: absolute;
@@ -63,10 +63,10 @@ nav {
     align-items: center;
     justify-content: space-around;
     -webkit-transition:height, 0.3s linear;
-   -moz-transition: height, 0.3s linear;
-   -ms-transition: height, 0.3s linear;
-   -o-transition: height, 0.3s linear;
-   transition: height, 0.3s linear;
+    -moz-transition: height, 0.3s linear;
+    -ms-transition: height, 0.3s linear;
+    -o-transition: height, 0.3s linear;
+    transition: height, 0.3s linear;
     &.open {
       border-top: solid grey 1px;
       display: flex;

@@ -1,5 +1,75 @@
 .projects {
-  .photo-group {
-    margin-top: 30px;
+  .all-projects {
+    .photo-group {
+      margin-top: 30px;
+      hr {
+        width: 60%;
+        margin: 30px auto 0;
+        @media #{$breakpoint-medium} {
+          display: none;
+        }
+      }
+      a {
+        text-decoration: none;
+        img {
+          margin-bottom: 10px;
+        }
+        p:nth-child(2) {
+          margin: 10px 0 0 20px;
+          border: none;
+          background: transparent;
+          position: relative;
+          display: inline;
+          transition: 0.3s;
+          &::after {
+            position: absolute;
+            transition: .3s;
+            content: '';
+            width: 0;
+            bottom: 0;
+            height: 3px;
+            background: black;
+            right: 0;
+            left: auto;
+          }
+        }
+        p:nth-child(4) {
+          margin: 5px 0 0 20px;
+        }
+      }
+      &:hover {
+        a {
+          p:after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+      @media #{$breakpoint-medium} {
+        &:first-of-type {
+          margin-top: 90px;
+        }
+        &:nth-of-type(2) {
+          margin-top: 200px;
+        }
+        &:nth-of-type(3) {
+
+        }
+        &:nth-of-type(4) {
+          margin-top: 170px;
+        }
+        &:nth-of-type(5) {
+          margin-top: -40px;
+        }
+        &:nth-of-type(6) {
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+
+  .chevron {
+    margin: 80px 0 150px 0;
+    text-align: center;
   }
 }
