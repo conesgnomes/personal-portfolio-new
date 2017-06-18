@@ -428,7 +428,7 @@ header p {
   letter-spacing: .2em;
   font-size: .8em;
 }
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 760px) {
   header p {
     font-size: 1.2em;
   }
@@ -490,7 +490,32 @@ header .header-container {
   float: left;
   margin-left: 0;
 }
+@media only screen and (min-width: 760px) {
+  .bio img {
+    width: calc(33.33333%);
+    float: left;
+    margin-left: 0;
+    left: calc(8.33333% - 21.66667px + 20px);
+    position: relative;
+  }
+}
 .bio .bio-text {
+  width: calc(83.33333%);
+  float: left;
+  margin-left: 0;
+  left: calc(8.33333% - 21.66667px + 20px);
+  position: relative;
+}
+@media only screen and (min-width: 760px) {
+  .bio .bio-text {
+    width: calc(58.33333%);
+    float: left;
+    margin-left: 0;
+    left: calc(8.33333% - 21.66667px + 20px);
+    position: relative;
+  }
+}
+.bio .social {
   width: calc(83.33333%);
   float: left;
   margin-left: 0;
@@ -584,7 +609,7 @@ nav p {
   border-radius: 100%;
   padding: 10px;
 }
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 760px) {
   nav p {
     margin-left: 60px;
   }

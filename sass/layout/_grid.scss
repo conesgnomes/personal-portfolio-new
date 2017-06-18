@@ -9,10 +9,26 @@ header {
   @include grid-container;
   img {
     @include grid-column(12, $no-gutter);
+    @media #{$breakpoint-medium} {
+      @include grid-column(4, $no-gutter);
+      @include grid-shift(1);
+    }
   }
   .bio-text {
     @include grid-column(10, $no-gutter);
     @include grid-shift(1);
+    @media #{$breakpoint-medium} {
+      @include grid-column(7, $no-gutter);
+      @include grid-shift(1);
+    }
+  }
+  .social {
+    @include grid-column(10, $no-gutter);
+    @include grid-shift(1);
+    // @media #{$breakpoint-medium} {
+    //   @include grid-column(7, $no-gutter);
+    //   @include grid-shift(1);
+    // }
   }
   .chevron {
     @include grid-column(12, $no-gutter);
