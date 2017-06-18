@@ -67,8 +67,9 @@ nav {
     -ms-transition: height, 0.3s linear;
     -o-transition: height, 0.3s linear;
     transition: height, 0.3s linear;
+    border-top-color: $grey;
     &.open {
-      border-top: solid grey 1px;
+      border-top: solid $grey 1px;
       display: flex;
       align-items: center;
       justify-content: space-around;

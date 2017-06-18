@@ -466,10 +466,16 @@ nav p {
 .bio i {
   text-align: center;
   font-size: 1.7em;
+  color: black;
 }
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 1000px) {
   .bio i {
-    text-align: left;
+    color: #D8D8D8;
+    transition: 0.3s;
+  }
+  .bio i:hover {
+    color: black;
+    transition: 0.3s;
   }
 }
 
@@ -496,6 +502,11 @@ nav p {
   font-family: 'futura-md';
   font-size: .8em;
   letter-spacing: .1em;
+}
+@media only screen and (min-width: 1000px) {
+  .projects .photo-group p:nth-child(2) {
+    font-size: .9em;
+  }
 }
 .projects .photo-group p:nth-child(4) {
   color: black;
@@ -785,9 +796,10 @@ nav ul {
   -ms-transition: height, 0.3s linear;
   -o-transition: height, 0.3s linear;
   transition: height, 0.3s linear;
+  border-top-color: #D8D8D8;
 }
 nav ul.open {
-  border-top: solid grey 1px;
+  border-top: solid #D8D8D8 1px;
   display: flex;
   align-items: center;
   justify-content: space-around;
