@@ -56,7 +56,7 @@ Projects Page 3 of 3 - Mobile
 ![alt text](https://github.com/conesgnomes/personal-portfolio/blob/master/img/Mobile-5.png)
 
 Sketch Mock-up
-![alt text]()
+![alt text](https://github.com/conesgnomes/personal-portfolio/blob/master/img/Sketch-mock-up.png)
 
 ## Setup/Installation Requirements
 
