@@ -688,10 +688,10 @@ header .header-container {
 header {
   background-image: url("../img/umbrella.JPG");
   background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
-  background-position: center;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
