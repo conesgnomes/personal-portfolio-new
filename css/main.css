@@ -686,11 +686,10 @@ header .header-container {
 }
 
 header {
-  background-image: url("../img/umbrella.JPG");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
   position: relative;
+  background-image: url("../img/umbrella.JPG");
+  background-attachment: scroll;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -900,7 +899,7 @@ nav #nav-icon {
 }
 nav #nav-icon span {
   display: block;
-  position: absolute;
+  position: relative;
   height: 3px;
   width: 100%;
   background: black;
@@ -919,10 +918,11 @@ nav #nav-icon span:nth-child(1) {
   top: 8px;
 }
 nav #nav-icon span:nth-child(2), nav #nav-icon span:nth-child(3) {
+  position: absolute;
   top: 20px;
 }
 nav #nav-icon span:nth-child(4) {
-  top: 32px;
+  top: 28px;
 }
 nav #nav-icon.open span:nth-child(1) {
   top: 26px;

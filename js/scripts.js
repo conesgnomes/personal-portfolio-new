@@ -1,5 +1,12 @@
 $(function() {
 
+  // background image on header
+
+  $(window).scroll(function() {
+    var scrolledY = $(window).scrollTop();
+    $('header').css('background-position', 'left ' + ((scrolledY)) + 'px');
+  });
+
   // auto scroll to bio on 'enter' button click
 
   $(".enter").click(function() {
